@@ -11,6 +11,8 @@ exports.sendNotificationToTopic = functions.firestore.document("donate items/{ui
     notification: {
       title: title,
       body: description,
+      click_action: "FCM_PLUGIN_ACTIVITY",
+      icon: "assets/images/logo.gif",
     },
     topic: "item added",
   };
